@@ -85,7 +85,7 @@ def test_drummer():
     assert ginger.get_instrument() == "drums"
 
 
-@pytest.mark.skip("todo")
+# @pytest.mark.skip("todo")
 def test_instruments(one_band):
     instruments = ["guitar", "bass", "drums"]
     for i, member in enumerate(one_band.members):
@@ -93,7 +93,7 @@ def test_instruments(one_band):
         assert member.get_instrument() == instruments[i]
 
 
-@pytest.mark.skip("todo")
+# @pytest.mark.skip("todo")
 def test_individual_solos(one_band):
     for member in one_band.members:
         if member.get_instrument() == "guitar":
@@ -104,7 +104,7 @@ def test_individual_solos(one_band):
             assert member.play_solo() == "rattle boom crash"
 
 
-@pytest.mark.skip("todo")
+# @pytest.mark.skip("todo")
 def test_band_members(one_band):
 
     assert len(one_band.members) == 3
@@ -232,3 +232,5 @@ def clean():
 #         repr(e)
 #         == """<ExceptionInfo TypeError("Can't instantiate abstract class Keyboardist with abstract method some_method_that_must_be_implemented_in_base_class") tblen=1>"""  # noqa: E501
 #     )
+
+
