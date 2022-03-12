@@ -11,11 +11,11 @@ from abc import abstractmethod
 """
 class Band:
 
-    all_instances = []
+    instances = []
     def __init__(self, name, members):
         self.name = name
         self.members = members
-        Band.all_instances.append(self)
+        Band.instances.append(self)
 
 
     def play_solos(self):
@@ -28,7 +28,7 @@ class Band:
     
     @classmethod
     def to_list(cls):
-        return cls.all_instances
+        return cls.instances
 
 
 
